@@ -4,7 +4,7 @@ use std::ops::{Add, Div, Mul, Sub};
 
 fn main() {
 
-println!("rTaschenrechner 0.10\n");
+println!("rTaschenrechner 0.1.1\n");
 
 // init variables
 let mut z1 = String::new(); // Erste Zahl
@@ -35,18 +35,19 @@ let y1: i32 = z1
 
 // type in operand
 
-println!("Gebe den Operanden ein. Erlaubte Zeichen: '+' '-' '*' '/'");
+println!("\nGebe den Operanden ein. Erlaubte Zeichen: '+' '-' '*' '/'");
 
-let z3 = String::new();
+let mut z3 = String::new();
 io::stdin()
     .read_line(&mut z3)
     .expect("Konnte Operanden nicht erkennen.");
 
-//let y3 = z3
-  //  .trim()
-  // .parse()
-  // .expect("Operand konnte nicht geparst werden.");
+z3.truncate(1); // remove whitespaces and other shitty signs
 
+// debug, hide it when you release it
+//println!("bla {:?}", z3);
+//println!("bla {:?}", &*z3);
+//println!("bla {:?}", y3);
 
 
 // type in second numer
@@ -63,7 +64,7 @@ let y2: i32 = z2
 
 // calculate this shit
 
-let x2 = match z3 {
+let x2 = match &*z3 {
     "+" => Add::<i32>::add,
     "-" => Sub::<i32>::sub,
     "*" => Mul::<i32>::mul,
@@ -73,7 +74,7 @@ let x2 = match z3 {
 
 let x1 = x2(y1, y2);
 
-// println!("\nIhr Ergebnis ist {}", x1);
+println!("\nIhr Ergebnis ist: {}", x1);
 
 // debug, hide it when you release it
 // println!("z1: {}", z1);
@@ -81,7 +82,7 @@ let x1 = x2(y1, y2);
 // println!("z2: {}", z2);
 // println!("y2: {}", y2);
 // println!("x1: {}", x1);
-println!("z3: {}", z3);
+//println!("z3: {}", z3);
 //println!("y3: {}", y3);
 
 
