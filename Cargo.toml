@@ -1,0 +1,6 @@
+[package]
+name = "taschenrechner"
+version = "0.1.0"
+authors = ["Wynton <crazycusti@googlemail.com>"]
+
+[dependencies]
