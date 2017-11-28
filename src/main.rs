@@ -41,7 +41,7 @@ io::stdin()
 let y2: i32 = z2
     .trim()
     .parse()
-    .expect("Kontte zweite Zahl nicht parsen.");
+    .expect("Konnte zweite Zahl nicht parsen.");
 
 // calculate this shit
 
