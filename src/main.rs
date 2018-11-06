@@ -23,7 +23,7 @@ io::stdin()
     .read_line(&mut z1)
     .expect("Konnte erste Zahl nicht erkennen.");
 
-let y1: i32 = z1
+let y1: f32 = z1
     .trim()
     .parse()
     .expect("Konnte erste Zahl nicht parsen.");
@@ -57,7 +57,7 @@ io::stdin()
     .read_line(&mut z2)
     .expect("Konnte zweite Zahl nicht erkennen.");
 
-let y2: i32 = z2
+let y2: f32 = z2
     .trim()
     .parse()
     .expect("Konnte zweite Zahl nicht parsen.");
@@ -65,10 +65,10 @@ let y2: i32 = z2
 // calculate this shit
 
 let x2 = match &*z3 {
-    "+" => Add::<i32>::add,
-    "-" => Sub::<i32>::sub,
-    "*" => Mul::<i32>::mul,
-    "/" => Div::<i32>::div,
+    "+" => Add::<f32>::add,
+    "-" => Sub::<f32>::sub,
+    "*" => Mul::<f32>::mul,
+    "/" => Div::<f32>::div,
     _ => panic!("Operand konnt nicht verarbeitet werden."),
 };
 
