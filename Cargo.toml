@@ -1,6 +1,6 @@
 [package]
-name = "taschenrechner"
-version = "0.1.1"
+name = "rSimpleCalc"
+version = "0.1.3-alpha"
 authors = ["Wynton <crazycusti@googlemail.com>"]
 
 [dependencies]

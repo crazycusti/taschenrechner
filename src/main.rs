@@ -4,7 +4,7 @@ use std::ops::{Add, Div, Mul, Sub};
 
 fn main() {
 
-println!("rTaschenrechner 0.1.2-alpha\n");
+println!("rSimpleCalc 0.1.3-alpha\n");
 
 // init variables
 let mut z1 = String::new(); // Erste Zahl
@@ -12,8 +12,8 @@ let mut z2 = String::new(); // Zweite Zahl
 
 
 // debug, hide it when you release it
-println!("z1: {}", z1);
-println!("z2: {}", z2);
+// println!("z1: {}", z1);
+// println!("z2: {}", z2);
 
 
 // type in first number
@@ -29,9 +29,9 @@ let y1: f32 = z1
     .expect("Konnte erste Zahl nicht parsen.");
 
 // debug, hide it when you release it
-println!("z1: {}", z1);
-println!("z2: {}", z2);
-println!("y1: {}", y1);
+// println!("z1: {}", z1);
+// println!("z2: {}", z2);
+// println!("y1: {}", y1);
 
 // type in operand
 
@@ -45,9 +45,9 @@ io::stdin()
 z3.truncate(1); // remove whitespaces and other shitty signs
 
 // debug, hide it when you release it
-println!("bla {:?}", z3);
-println!("bla {:?}", &*z3);
-//println!("bla {:?}", y3);
+// println!("bla {:?}", z3);
+// println!("bla {:?}", &*z3);
+// println!("bla {:?}", y3);
 
 
 // type in second numer
@@ -77,13 +77,13 @@ let x1 = x2(y1, y2);
 println!("\nIhr Ergebnis ist: {}", x1);
 
 // debug, hide it when you release it
-println!("z1: {}", z1);
-println!("y1: {}", y1);
-println!("z2: {}", z2);
-println!("y2: {}", y2);
-println!("x1: {}", x1);
-println!("z3: {}", z3);
-//println!("y3: {}", y3);
+// println!("z1: {}", z1);
+// println!("y1: {}", y1);
+// println!("z2: {}", z2);
+// println!("y2: {}", y2);
+// println!("x1: {}", x1);
+// println!("z3: {}", z3);
+// println!("y3: {}", y3);
 
 
 
