@@ -47,7 +47,7 @@ z3.truncate(1); // remove whitespaces and other shitty signs
 // debug, hide it when you release it
 println!("bla {:?}", z3);
 println!("bla {:?}", &*z3);
-println!("bla {:?}", y3);
+//println!("bla {:?}", y3);
 
 
 // type in second numer
@@ -83,7 +83,7 @@ println!("z2: {}", z2);
 println!("y2: {}", y2);
 println!("x1: {}", x1);
 println!("z3: {}", z3);
-println!("y3: {}", y3);
+//println!("y3: {}", y3);
 
 
 
