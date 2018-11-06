@@ -4,7 +4,7 @@ use std::ops::{Add, Div, Mul, Sub};
 
 fn main() {
 
-println!("rTaschenrechner 0.1.1\n");
+println!("rTaschenrechner 0.1.2-alpha\n");
 
 // init variables
 let mut z1 = String::new(); // Erste Zahl
